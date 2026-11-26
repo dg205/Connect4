@@ -1,0 +1,43 @@
+.game {
+  text-align: center;
+  padding: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  background-color: #1d4ed8;
+  padding: 15px;
+  border-radius: 15px;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.player-0{
+  background-color: white;
+}
+
+.player-1 {
+  background-color: red;
+}
+
+.player-2 {
+  background-color: yellow;
+}
+
+.cell:hover {
+  opacity: 0.8;
+}
+
+.board.disabled .cell {
+  cursor: not-allowed;
+  pointer-events: none;
+}
