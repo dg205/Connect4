@@ -41,3 +41,37 @@
   cursor: not-allowed;
   pointer-events: none;
 }
+
+@media (max-width: 600px) {
+  .game {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .board {
+    width: 100%;
+    max-width: 480px;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .cell {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  button,
+  input {
+    font-size: 16px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
